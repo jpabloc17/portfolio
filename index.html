@@ -4,15 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
     <title>Pablo Castro | Portfolio</title>
   </head>
   <body>
     <header>
-      <div class="profile-picture">
-        <div class="picture"></div>
-        <span>Pablo Castro</span>
+      <div class="mobile-header">
+        <div class="profile-picture">
+          <div class="picture"></div>
+          <span>Pablo Castro</span>
+        </div>
+        <div class="burguer-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
-      <nav>
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#social">SOCIAL</a></li>
+        </ul>
+      </nav>
+      <nav class="desktop-nav">
         <ul>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#projects">PROJECTS</a></li>
@@ -20,7 +35,12 @@
         </ul>
       </nav>
     </header>
+
     <main>
+      <label for="light-theme" class="switch">
+        <input type="checkbox" name="light-theme" id="light-theme" />
+        <span class="slider round"></span>
+      </label>
       <section id="about" class="about">
         <h1>Hi There, I'm Pablo Castro</h1>
         <h2>About Me</h2>
@@ -99,7 +119,11 @@
               <a
                 href="https://github.com/jpabloc17/flatiron-phase-2-react-project-Glow-med-spa"
                 target="_blank"
-                ><img src=".//asses/icons/github.svg" alt="github icon" />
+                ><img
+                  src=".//asses/icons/github.svg"
+                  alt="github icon"
+                  class="github-icon"
+                />
                 Code</a
               >
             </div>
@@ -150,7 +174,11 @@
                 href="https://github.com/jpabloc17/flatiron-frontend-phase-1-project-Digipedia/tree/main"
                 target="_blank"
               >
-                <img src=".//asses/icons/github.svg" alt="github icon" />
+                <img
+                  src=".//asses/icons/github.svg"
+                  alt="github icon"
+                  class="github-icon"
+                />
                 Code</a
               >
             </div>
@@ -169,7 +197,10 @@
             <ul>
               <li>
                 <a href="https://github.com/jpabloc17" target="_blank"
-                  ><img src=".//asses/icons/github.svg" alt="github icon"
+                  ><img
+                    src=".//asses/icons/github.svg"
+                    alt="github icon"
+                    class="github-icon"
                 /></a>
               </li>
               <li>
